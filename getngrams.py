@@ -26,7 +26,7 @@ def getNgrams(query, corpus, startYear, endYear, smoothing, caseInsensitive):
     if '@' in params['content']:
         params['content'] = params['content'].replace('@', '=>')
     req = requests.get('http://books.google.com/ngrams/graph', params=params)
-    res = re.findall('var data = (.*?);\\n', req.text)
+    res = re.findall('ngrams.data = (.*?);\\n', req.text)
     if res:
         data = {qry['ngram']: qry['timeseries']
                 for qry in literal_eval(res[0])}
