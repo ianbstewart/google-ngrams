@@ -1,5 +1,7 @@
 # About #
 
+**ianbstewart update** (7/27/20): modified scraping script to handle new (?) data format from back-end.
+
 Here you'll find a basic python script to retrieve data behind the trajectories plotted on the [Google Ngram Viewer](http://books.google.com/ngrams). A Python script that creates [XKCD](http://www.xkcd.com) style plots from the ngram CSV data is also included, making it simple to create some awesome looking plots!
 
 # Dependencies
